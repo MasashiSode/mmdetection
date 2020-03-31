@@ -1,11 +1,13 @@
 from torch import nn as nn
 
 from .conv_ws import ConvWS2d
+from .depthwise_separable_conv import DepthwiseSeparableConv2d
 from .dcn import DeformConvPack, ModulatedDeformConvPack
 
 conv_cfg = {
     'Conv': nn.Conv2d,
     'ConvWS': ConvWS2d,
+    'DepthwiseSeparableConv2d': DepthwiseSeparableConv2d,
     'DCN': DeformConvPack,
     'DCNv2': ModulatedDeformConvPack,
     # TODO: octave conv

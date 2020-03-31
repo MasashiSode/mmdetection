@@ -2,6 +2,7 @@ from .context_block import ContextBlock
 from .conv import build_conv_layer
 from .conv_module import ConvModule
 from .conv_ws import ConvWS2d, conv_ws_2d
+from .depthwise_separable_conv import DepthwiseSeparableConv2d
 from .dcn import (DeformConv, DeformConvPack, DeformRoIPooling,
                   DeformRoIPoolingPack, ModulatedDeformConv,
                   ModulatedDeformConvPack, ModulatedDeformRoIPoolingPack,
@@ -26,6 +27,7 @@ __all__ = [
     'deform_roi_pooling', 'SigmoidFocalLoss', 'sigmoid_focal_loss',
     'MaskedConv2d', 'ContextBlock', 'GeneralizedAttention', 'NonLocal2D',
     'get_compiler_version', 'get_compiling_cuda_version', 'build_conv_layer',
-    'ConvModule', 'ConvWS2d', 'conv_ws_2d', 'build_norm_layer', 'Scale',
+    'ConvModule', 'ConvWS2d', 'conv_ws_2d', 'DepthwiseSeparableConv2d',
+    'build_norm_layer', 'Scale',
     'build_upsample_layer'
 ]

@@ -7,7 +7,7 @@ from mmcv.cnn import xavier_init
 from mmdet.core import AnchorGenerator, anchor_target, multi_apply
 from ..losses import smooth_l1_loss
 from ..registry import HEADS
-from ..utils import DepthwiseSeparableConv2d
+from mmdet.ops import DepthwiseSeparableConv2d
 from .anchor_head import AnchorHead
 
 
